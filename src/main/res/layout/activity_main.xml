@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.duy.thread_asyntask_handler.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:max="100"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+       android:layout_width="350dp"
+       android:layout_height="30dp"
+       android:layout_margin="15dp"
+       android:id="@+id/id.pro"
+       style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+       android:max="100"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@+id/id.pro"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0033FF"
+        android:id="@+id/idtext"
+        android:background="#FF6600"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idtext"
+        android:layout_margin="15dp"
+        android:text="Thread"
+        android:id="@+id/id_thread"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idtext"
+        android:layout_toRightOf="@id/id_thread"
+        android:layout_margin="15dp"
+        android:id="@+id/id.async"
+        android:text="Async Task"
+        />
+
+</RelativeLayout>
